@@ -2,3 +2,7 @@
 *.desktop
 *.kdev4
 *.pyc
+build
+dist
+PyLMI_SDP.egg-info
+.ipynb_checkpoints
