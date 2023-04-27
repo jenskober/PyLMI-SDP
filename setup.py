@@ -16,7 +16,7 @@ else:
 
 setup(
     name='PyLMI-SDP',
-    version='1.1',
+    version='1.1.1',
     author='Cristovao D. Sousa',
     author_email='crisjss@gmail.com',
     description=description,
@@ -24,7 +24,7 @@ setup(
     keywords='LMI SDP',
     url='http://github.com/cdsousa/PyLMI-SDP',
     packages=['lmi_sdp'],
-    install_requires=['sympy'],
+    install_requires=['sympy', 'packaging'],
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[
