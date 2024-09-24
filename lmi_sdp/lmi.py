@@ -4,7 +4,10 @@ import sympy
 from sympy import sympify, GreaterThan, StrictGreaterThan, LessThan, \
     StrictLessThan, MatrixExpr, block_collapse
 
-from sympy.matrices.matrices import MatrixError, ShapeError
+try:
+    from sympy.matrices.matrices import MatrixError, ShapeError
+except ImportError:
+    from sympy.matrices.matrixbase import MatrixError, ShapeError
 
 from .lm import lm_sym_expanded
 

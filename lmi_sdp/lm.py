@@ -1,6 +1,11 @@
 """Tools for symbolic and numerical representations of linear matrices"""
 from sympy import ImmutableMatrix, S, Dummy, MatMul, MatAdd
-from sympy.matrices.matrices import MatrixError
+
+try:
+    from sympy.matrices.matrices import MatrixError
+except ImportError:
+    from sympy.matrices.matrixbase import MatrixError
+
 from numpy import zeros
 
 try:
